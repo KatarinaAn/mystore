@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Оформление заказа</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Оформление заказа на покупку фильмов." />
+	<meta name="keywords" content="заказ, оформление заказа, оформление заказа фильмы" />
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	<script type="text/javascript" src="js/functions.js"></script>
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<img src="images/header.png" alt="Шапка" />
+			<div>
+				<p class="red">8-800-123-45-67</p>
+				<p class="blue">Время работы с 09:00 до 21:00<br />без перерыва и выходных</p>
+			</div>
+			<div class="cart">
+				<p class="cart_title">Корзина</p>
+				<p class="blue">Текущий заказ</p>
+				<p>В корзине <span>1</span> товар<br />на сумму <span>350</span> руб.</p>
+				<a href="https://storedvd.ru/cart">Перейти в корзину</a>
+			</div>
+		</div>
+		<div id="topmenu">
+			<ul>
+				<li>
+					<a href="https://storedvd.ru/">ГЛАВНАЯ</a>
+				</li>
+				<li>
+					<img src="images/topmenu_border.png" alt="" />
+				</li>
+				<li>
+					<a href="https://storedvd.ru/delivery">ОПЛАТА И ДОСТАВКА</a>
+				</li>
+				<li>
+					<img src="images/topmenu_border.png" alt="" />
+				</li>
+				<li>
+					<a href="https://storedvd.ru/contacts">КОНТАКТЫ</a>
+				</li>
+			</ul>
+			<div id="search">
+				<form name="search" action="https://storedvd.ru/search" method="get">
+					<table>
+						<tr>
+							<td class="input_left"></td>
+							<td>
+								<input type="text" name="q" value="поиск" onfocus="if(this.value == 'поиск') this.value=''" onblur="if(this.value == '') this.value='поиск'" />
+							</td>
+							<td class="input_right"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<div id="content">
+			<div id="left">
+				<div id="menu">
+					<div class="header">
+						<h3>Разделы</h3>
+					</div>
+					<div id="items">
+													<p >
+								<a href="https://storedvd.ru/section?id=1">Комедии</a>
+							</p>
+													<p >
+								<a href="https://storedvd.ru/section?id=2">Исторические</a>
+							</p>
+													<p >
+								<a href="https://storedvd.ru/section?id=3">Мелодрамы</a>
+							</p>
+													<p >
+								<a href="https://storedvd.ru/section?id=4">Триллеры</a>
+							</p>
+													<p class="last">
+								<a href="https://storedvd.ru/section?id=5">Боевики</a>
+							</p>
+											</div>
+					<div class="bottom"></div>
+				</div>
+			</div>
+			<div id="right">
+				<div id="order">
+	<h2>Оформление заказа</h2>
+		<form name="order" action="https://storedvd.ru/functions.php" method="post">
+		<table>
+			<tr>
+				<td class="w120">ФИО:</td>
+				<td>
+					<input type="text" name="name" value="" />
+				</td>
+			</tr>
+			<tr>
+				<td>Телефон:</td>
+				<td>
+					<input type="text" name="phone" value="" />
+				</td>
+			</tr>
+			<tr>
+				<td>E-mail:</td>
+				<td>
+					<input type="text" name="email" value="" />
+				</td>
+			</tr>
+			<tr>
+				<td>Доставка:</td>
+				<td>
+					<select name="delivery" onchange="changeDelivery(this)">
+						<option value="">выберите, пожалуйста...</option>
+						<option value="0" >Доставка</option>
+						<option value="1" >Самовывоз</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr id="address">
+				<td>
+					<p>Полный адрес (Страна, город, индекс, улица, дом, квартира):</p>
+					<textarea name="address" cols="80" rows="6"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Примечание к заказу:</p>
+					<textarea name="notice" cols="80" rows="6"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="button">
+					<input type="hidden" name="func" value="order" />
+					<input type="image" src="images/order_end.png" alt="Закончить оформление заказа" onmouseover="this.src='images/order_end_active.png'" onmouseout="this.src='images/order_end.png'" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>			</div>
+			<div class="clear"></div>
+			<div id="footer">
+				<div id="pm">
+					<table>
+						<tr>
+							<td>Способы оплаты:</td>
+							<td>
+								<img src="images/pm.png" alt="Способы оплаты" />
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="copy">
+					<p>Copyright &copy; Site.ru. Все права защищены.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

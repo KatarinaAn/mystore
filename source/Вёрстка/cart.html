@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Корзина</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Содержимое корзины." />
+	<meta name="keywords" content="корзина, содержимое корзины" />
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	<!--[if IE 8]>
+		<link rel="stylesheet" href="styles/ie8.css" type="text/css" />
+	<![endif]-->
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=saAMMf-MyR1F45GuXehGVwMQWivNtBiSsl4KIlfPdwwEB-lsDrY7kuzpK1csrl9f" charset="UTF-8"></script><script type="text/javascript" src="js/functions.js"></script>
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<img src="images/header.png" alt="Шапка" />
+			<div>
+				<p class="red">8-800-123-45-67</p>
+				<p class="blue">Время работы с 09:00 до 21:00<br />без перерыва и выходных</p>
+			</div>
+			<div class="cart">
+				<p class="cart_title">Корзина</p>
+				<p class="blue">Текущий заказ</p>
+				<p>В корзине <span>3</span> товара<br />на сумму <span>747</span> руб.</p>
+				<a href="https://storedvd.ru/cart">Перейти в корзину</a>
+			</div>
+		</div>
+		<div id="topmenu">
+			<ul>
+				<li>
+					<a href="https://storedvd.ru/">ГЛАВНАЯ</a>
+				</li>
+				<li>
+					<img src="images/topmenu_border.png" alt="" />
+				</li>
+				<li>
+					<a href="https://storedvd.ru/delivery">ОПЛАТА И ДОСТАВКА</a>
+				</li>
+				<li>
+					<img src="images/topmenu_border.png" alt="" />
+				</li>
+				<li>
+					<a href="https://storedvd.ru/contacts">КОНТАКТЫ</a>
+				</li>
+			</ul>
+			<div id="search">
+				<form name="search" action="https://storedvd.ru/search" method="get">
+					<table>
+						<tr>
+							<td class="input_left"></td>
+							<td>
+								<input type="text" name="q" value="поиск" onfocus="if(this.value == 'поиск') this.value=''" onblur="if(this.value == '') this.value='поиск'" />
+							</td>
+							<td class="input_right"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<div id="content">
+			<div id="left">
+				<div id="menu">
+					<div class="header">
+						<h3>Разделы</h3>
+					</div>
+					<div id="items">
+													<p >
+								<a href="https://storedvd.ru/section?id=1">Комедии</a>
+							</p>
+													<p >
+								<a href="https://storedvd.ru/section?id=2">Исторические</a>
+							</p>
+													<p >
+								<a href="https://storedvd.ru/section?id=3">Мелодрамы</a>
+							</p>
+													<p >
+								<a href="https://storedvd.ru/section?id=4">Триллеры</a>
+							</p>
+													<p class="last">
+								<a href="https://storedvd.ru/section?id=5">Боевики</a>
+							</p>
+											</div>
+					<div class="bottom"></div>
+				</div>
+			</div>
+			<div id="right">
+				<div id="cart">
+	<h2>Корзина</h2>
+	<form name="cart" action="https://storedvd.ru/functions.php" method="post">
+		<table>
+			<tr>
+				<td colspan="8" id="cart_top"></td>
+			</tr>
+			<tr>
+				<td class="cart_left"></td>
+				<td colspan="2">Товар</td>
+				<td>Цена за 1 шт.</td>
+				<td>Количество</td>
+				<td>Стоимость</td>
+				<td></td>
+				<td class="cart_right"></td>
+			</tr>
+			<tr>
+				<td class="cart_left"></td>
+				<td colspan="6">
+					<hr />
+				</td>
+				<td class="cart_right"></td>
+			</tr>
+							<tr class="cart_row">
+					<td class="cart_left"></td>
+					<td class="img">
+						<img src="https://storedvd.ru/images/products/who-am-i.jpg" alt="Кто я?" />
+					</td>
+					<td class="title">Кто я?</td>
+					<td>349 руб.</td>
+					<td>
+						<table class="count">
+							<tr>
+								<td>
+									<input type="text" name="count_16" value="1" />
+								</td>
+								<td>шт.</td>
+							</tr>
+						</table>
+					</td>
+					<td class="bold">349 руб.</td>
+					<td>
+						<a href="https://storedvd.ru/functions.php?func=delete_cart&amp;id=16" class="link_delete">x удалить</a>
+					</td>
+					<td class="cart_right"></td>
+				</tr>
+									<tr>
+					<td class="cart_left"></td>
+					<td colspan="6" class="cart_border">
+						<hr />
+					</td>
+					<td class="cart_right"></td>
+				</tr>
+											<tr class="cart_row">
+					<td class="cart_left"></td>
+					<td class="img">
+						<img src="https://storedvd.ru/images/products/rush-hour.jpg" alt="Час пик" />
+					</td>
+					<td class="title">Час пик</td>
+					<td>199 руб.</td>
+					<td>
+						<table class="count">
+							<tr>
+								<td>
+									<input type="text" name="count_15" value="2" />
+								</td>
+								<td>шт.</td>
+							</tr>
+						</table>
+					</td>
+					<td class="bold">398 руб.</td>
+					<td>
+						<a href="https://storedvd.ru/functions.php?func=delete_cart&amp;id=15" class="link_delete">x удалить</a>
+					</td>
+					<td class="cart_right"></td>
+				</tr>
+										<tr id="discount">
+				<td class="cart_left"></td>
+				<td colspan="6">
+					<form name="discount" action="#" method="post">
+						<table>
+							<tr>
+								<td>Введите номер купона со скидкой<br /><span>(если есть)</span></td>
+								<td>
+									<input type="text" name="discount" value="" />
+								</td>
+								<td>
+									<input type="image" src="images/cart_discount.png" alt="Получить скидку" onmouseover="this.src='images/cart_discount_active.png'" onmouseout="this.src='images/cart_discount.png'" />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</td>
+				<td class="cart_right"></td>
+			</tr>
+			<tr id="summa">
+				<td class="cart_left"></td>
+				<td colspan="6">
+					<p>Итого : <span>747 руб.</span></p>
+				</td>
+				<td class="cart_right"></td>
+			</tr>
+			<tr>
+				<td class="cart_left"></td>
+				<td colspan="2">
+					<div class="left">
+						<input type="image" src="images/cart_recalc.png" alt="Пересчитать" onmouseover="this.src='images/cart_recalc_active.png'" onmouseout="this.src='images/cart_recalc.png'" />
+					</div>
+				</td>
+				<td colspan="4">
+					<div class="right">
+						<input type="hidden" name="func" value="cart" />
+						<a href="https://storedvd.ru/order">
+							<img src="images/cart_order.png" alt="Оформить заказ" onmouseover="this.src='images/cart_order_active.png'" onmouseout="this.src='images/cart_order.png'" />
+						</a>
+					</div>
+				</td>
+				<td class="cart_right"></td>
+			</tr>
+			<tr>
+				<td colspan="8" id="cart_bottom"></td>
+			</tr>
+		</table>
+	</form>
+</div>			</div>
+			<div class="clear"></div>
+			<div id="footer">
+				<div id="pm">
+					<table>
+						<tr>
+							<td>Способы оплаты:</td>
+							<td>
+								<img src="images/pm.png" alt="Способы оплаты" />
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="copy">
+					<p>Copyright &copy; Site.ru. Все права защищены.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
